@@ -14,11 +14,20 @@ Find the people in your LinkedIn network who can get you hired — hiring manage
 In Claude Code:
 
 ```
-/plugin marketplace add baldiga/hireco-plugin
+/plugin marketplace add https://github.com/baldiga/hireco-plugin.git
 /plugin install hireco@hireco
 ```
 
-Claude Code asks for your **Hireco API key** (starts with `hk_`). It's stored in your system's secure credential store, not in a settings file.
+(If you have GitHub SSH keys set up, the short form `/plugin marketplace add baldiga/hireco-plugin` works too.)
+
+Claude Code asks for your **Hireco API key** (starts with `hk_`). It's stored in your system's secure credential store, not in a settings file. To change it later: `/plugin configure hireco@hireco`.
+
+From a terminal instead:
+
+```
+claude plugin marketplace add https://github.com/baldiga/hireco-plugin.git
+claude plugin install hireco@hireco --config api_key=hk_YOUR_KEY
+```
 
 ## Use
 
