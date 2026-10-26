@@ -1,0 +1,19 @@
+{
+  "name": "hireco",
+  "owner": {
+    "name": "Hireco",
+    "url": "https://hireco.help"
+  },
+  "metadata": {
+    "description": "Hireco for Claude: find who in your LinkedIn network can get you hired.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "hireco",
+      "source": "./plugins/hireco",
+      "description": "Maps your LinkedIn network into hiring managers, insiders, introducers and ex-coworkers, with a ranked list, a radar map and a CSV.",
+      "category": "productivity"
+    }
+  ]
+}

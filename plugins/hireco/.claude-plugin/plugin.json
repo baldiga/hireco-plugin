@@ -1,0 +1,37 @@
+{
+  "name": "hireco",
+  "displayName": "Hireco",
+  "version": "0.1.0",
+  "description": "Find the people in your LinkedIn network who can get you hired: hiring managers, insiders, introducers and ex-coworkers, as a ranked list, a radar map and a CSV.",
+  "author": {
+    "name": "Hireco",
+    "url": "https://hireco.help"
+  },
+  "homepage": "https://hireco.help",
+  "repository": "https://github.com/baldiga/hireco-plugin",
+  "license": "MIT",
+  "keywords": ["jobs", "job-search", "linkedin", "networking", "referrals", "career", "recruiting", "mcp"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://hireco.help/guide",
+  "supportUrl": "https://hireco.help/support",
+  "privacyPolicyUrl": "https://hireco.help/privacy",
+  "termsOfServiceUrl": "https://hireco.help/terms",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Hireco API key",
+      "description": "Starts with hk_. Get it from your dashboard at https://hireco.help/dashboard (early access members).",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "hireco": {
+      "type": "http",
+      "url": "https://hireco.help/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
+    }
+  }
+}
