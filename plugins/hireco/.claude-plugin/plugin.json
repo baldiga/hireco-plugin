@@ -1,7 +1,7 @@
 {
   "name": "hireco",
   "displayName": "Hireco",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find the people in your LinkedIn network who can get you hired: hiring managers, insiders, introducers and ex-coworkers, as a ranked list, a radar map and a CSV.",
   "author": {
     "name": "Hireco",
